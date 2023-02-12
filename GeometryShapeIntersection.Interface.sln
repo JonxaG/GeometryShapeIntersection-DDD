@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryShapeIntersection.Interface", "GeometryShapeIntersection.Interface\GeometryShapeIntersection.Interface.csproj", "{2BB121CE-DFEB-448F-8E65-E673C710AEAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryShapeIntersection.Domain", "GeometryShapeIntersection.Domain\GeometryShapeIntersection.Domain.csproj", "{A1210DBB-1CFB-4744-ADF1-37688F421CEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeomtryShapeIntersection.Aplication", "GeomtryShapeIntersection.Aplication\GeomtryShapeIntersection.Aplication.csproj", "{209426A0-D484-4BF7-BBC5-EB5C81CE89B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryShapeIntersection.Infrastructure", "GeometryShapeIntersection.Infrastructure\GeometryShapeIntersection.Infrastructure.csproj", "{2AD9E04E-C511-4930-8A49-C15884EF89EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BB121CE-DFEB-448F-8E65-E673C710AEAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BB121CE-DFEB-448F-8E65-E673C710AEAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BB121CE-DFEB-448F-8E65-E673C710AEAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BB121CE-DFEB-448F-8E65-E673C710AEAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1210DBB-1CFB-4744-ADF1-37688F421CEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1210DBB-1CFB-4744-ADF1-37688F421CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1210DBB-1CFB-4744-ADF1-37688F421CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1210DBB-1CFB-4744-ADF1-37688F421CEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{209426A0-D484-4BF7-BBC5-EB5C81CE89B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{209426A0-D484-4BF7-BBC5-EB5C81CE89B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{209426A0-D484-4BF7-BBC5-EB5C81CE89B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{209426A0-D484-4BF7-BBC5-EB5C81CE89B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AD9E04E-C511-4930-8A49-C15884EF89EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AD9E04E-C511-4930-8A49-C15884EF89EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AD9E04E-C511-4930-8A49-C15884EF89EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AD9E04E-C511-4930-8A49-C15884EF89EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0F704E9-CD8D-4F88-9935-CAAC4626A30E}
+	EndGlobalSection
+EndGlobal
