@@ -4,7 +4,7 @@ namespace GeometryShapeIntersection.Application
 {
     public class GeometryShapeCalculator : IGeometryShapeCalculator
     {
-        private bool Intersects(IGeometryShape shape1, IGeometryShape shape2)
+        public bool Intersects(IGeometryShape shape1, IGeometryShape shape2)
         {
             if (shape1.Center.Length != shape2.Center.Length)
             {
@@ -21,7 +21,7 @@ namespace GeometryShapeIntersection.Application
             return true;
         }
 
-        private double CalculateIntersectedVolume(IGeometryShape shape1, IGeometryShape shape2)
+        public double CalculateIntersectedVolume(IGeometryShape shape1, IGeometryShape shape2)
         {
             if (shape1.Dimension < 0 || shape2.Dimension < 0)
             {

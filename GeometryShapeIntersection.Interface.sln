@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeomtryShapeIntersection.Ap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryShapeIntersection.Infrastructure", "GeometryShapeIntersection.Infrastructure\GeometryShapeIntersection.Infrastructure.csproj", "{2AD9E04E-C511-4930-8A49-C15884EF89EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryShapeIntersection.Tests", "GeometryShapeIntersection.Tests\GeometryShapeIntersection.Tests.csproj", "{3318FA11-2E3B-4EDB-9890-13103A6CE524}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{2AD9E04E-C511-4930-8A49-C15884EF89EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AD9E04E-C511-4930-8A49-C15884EF89EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AD9E04E-C511-4930-8A49-C15884EF89EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3318FA11-2E3B-4EDB-9890-13103A6CE524}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3318FA11-2E3B-4EDB-9890-13103A6CE524}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3318FA11-2E3B-4EDB-9890-13103A6CE524}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3318FA11-2E3B-4EDB-9890-13103A6CE524}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
