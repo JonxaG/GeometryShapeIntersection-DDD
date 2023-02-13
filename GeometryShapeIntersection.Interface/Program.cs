@@ -59,12 +59,12 @@ namespace GeometryShapeIntersection.Interface
             string[] centerCoords = Console.ReadLine().Split(',');
             double[] center = Array.ConvertAll(centerCoords, double.Parse);
 
-            Console.WriteLine("Enter dimension:");
+            Console.WriteLine("Enter Size:");
             double dimension = double.Parse(Console.ReadLine());
 
             //Assign id to 0 as it will be assigned by the IGeometryShapeRepository
             int id = 0;
-            return new Cube(id, center, dimension);
+            return new Cube(id, center[0], center[1], center[2], dimension);
         }
     }
 }

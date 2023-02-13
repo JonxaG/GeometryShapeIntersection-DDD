@@ -58,9 +58,9 @@
       <Project>{2ad9e04e-c511-4930-8a49-c15884ef89eb}</Project>
       <Name>GeometryShapeIntersection.Infrastructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\GeomtryShapeIntersection.Aplication\GeomtryShapeIntersection.Aplication.csproj">
+    <ProjectReference Include="..\GeomtryShapeIntersection.Aplication\GeometryShapeIntersection.Aplication.csproj">
       <Project>{209426a0-d484-4bf7-bbc5-eb5c81ce89b5}</Project>
-      <Name>GeomtryShapeIntersection.Aplication</Name>
+      <Name>GeometryShapeIntersection.Aplication</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

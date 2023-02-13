@@ -19,8 +19,8 @@ namespace GeometryShapeIntersection.Tests
         public void Intersects_WhenShapesDoIntersect_ReturnsTrue()
         {
             // Arrange
-            var shape1 = new Cube(1, new double[] { 0, 0, 0 }, 1);
-            var shape2 = new Cube(2, new double[] { 0.5, 0.5, 0.5 }, 1);
+            var shape1 = new Cube(1, 0, 0, 0, 1);
+            var shape2 = new Cube(2, 0.5, 0.5, 0.5 , 1);
 
             // Act
             bool result = _calculator.Intersects(shape1, shape2);
@@ -33,8 +33,8 @@ namespace GeometryShapeIntersection.Tests
         public void Intersects_WhenShapesDoNotIntersect_ReturnsFalse()
         {
             // Arrange
-            var shape1 = new Cube(1, new double[] { 0, 0, 0 }, 1);
-            var shape2 = new Cube(2, new double[] { 2, 2, 2 }, 1);
+            var shape1 = new Cube(1, 0, 0, 0, 1);
+            var shape2 = new Cube(2, 2, 2, 2, 1);
 
             // Act
             bool result = _calculator.Intersects(shape1, shape2);
@@ -47,8 +47,8 @@ namespace GeometryShapeIntersection.Tests
         public void CalculateIntersectedVolume_WhenShapesDoIntersect_ReturnsCorrectVolume()
         {
             // Arrange
-            var shape1 = new Cube(1, new double[] { 0, 0, 0 }, 2);
-            var shape2 = new Cube(2, new double[] { 0.5, 0.5, 0.5 }, 1);
+            var shape1 = new Cube(1, 0, 0, 0, 2);
+            var shape2 = new Cube(2, 0.5, 0.5, 0.5, 1);
 
             // Act
             double result = _calculator.CalculateIntersectedVolume(shape1, shape2);
@@ -61,8 +61,8 @@ namespace GeometryShapeIntersection.Tests
         public void CalculateIntersectedVolume_WhenShapesDoNotIntersect_ReturnsZero()
         {
             // Arrange
-            var shape1 = new Cube(1, new double[] { 0, 0, 0 }, 1);
-            var shape2 = new Cube(2, new double[] { 2, 2, 2 }, 1);
+            var shape1 = new Cube(1, 0, 0, 0, 1);
+            var shape2 = new Cube(2, 2, 2, 2, 1);
 
             // Act
             double result = _calculator.CalculateIntersectedVolume(shape1, shape2);
@@ -74,8 +74,8 @@ namespace GeometryShapeIntersection.Tests
         [TestMethod]
         public void TestGetIntersectionResult_WithNonIntersectingShapes_ReturnsCorrectMessage()
         {
-            var shape1 = new Cube(1, new double[] { 0, 0, 0 }, 1);
-            var shape2 = new Cube(2, new double[] { 3, 3, 3 }, 1);
+            var shape1 = new Cube(1, 0, 0, 0, 1);
+            var shape2 = new Cube(2, 3, 3, 3, 1);
 
             var result = _calculator.GetIntersectionResult(shape1, shape2);
 
@@ -84,30 +84,20 @@ namespace GeometryShapeIntersection.Tests
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
-        public void TestIntersects_WithShapesOfDifferentDimensions_ThrowsException()
+        public void TestCalculateIntersectedVolume_WithNegativeSize_ThrowsException()
         {
-            var shape1 = new Cube(1, new double[] { 0, 0, 0 }, 1);
-            var shape2 = new Cube(2, new double[] { 0, 0, 0 }, 2);
-
-            _calculator.Intersects(shape1, shape2);
-        }
-
-        [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
-        public void TestCalculateIntersectedVolume_WithNegativeDimensions_ThrowsException()
-        {
-            var shape1 = new Cube(1, new double[] { 0, 0, 0 }, -1);
-            var shape2 = new Cube(2, new double[] { 0, 0, 0 }, 2);
+            var shape1 = new Cube(1, 0, 0, 0, -1);
+            var shape2 = new Cube(2, 0, 0, 0, 2);
 
             _calculator.CalculateIntersectedVolume(shape1, shape2);
         }
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
-        public void TestGetIntersectionResult_WithNegativeDimensions_ThrowsException()
+        public void TestGetIntersectionResult_WithNegativeSize_ThrowsException()
         {
-            var shape1 = new Cube(1, new double[] { 0, 0, 0 }, -1);
-            var shape2 = new Cube(2, new double[] { 0, 0, 0 }, 2);
+            var shape1 = new Cube(1, 0, 0, 0, -1);
+            var shape2 = new Cube(2, 0, 0, 0, 2);
 
             _calculator.GetIntersectionResult(shape1, shape2);
         }
