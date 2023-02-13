@@ -51,13 +51,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\GeometryShapeIntersection.Aplication\GeometryShapeIntersection.Aplication.csproj">
+      <Project>{209426a0-d484-4bf7-bbc5-eb5c81ce89b5}</Project>
+      <Name>GeometryShapeIntersection.Aplication</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GeometryShapeIntersection.Domain\GeometryShapeIntersection.Domain.csproj">
       <Project>{a1210dbb-1cfb-4744-adf1-37688f421cec}</Project>
       <Name>GeometryShapeIntersection.Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\GeomtryShapeIntersection.Aplication\GeometryShapeIntersection.Aplication.csproj">
-      <Project>{209426a0-d484-4bf7-bbc5-eb5c81ce89b5}</Project>
-      <Name>GeometryShapeIntersection.Aplication</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
